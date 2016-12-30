@@ -26,21 +26,22 @@ const registerEventHandlers = (eventHandlers, skillContext) => {
       let speechOutput = '',
           reprompt
       if (currentGame.data.players.length === 0) {
-        speechOutput += 'ScoreKeeper, Let\'s start your game. Who\'s your first player?';
-        reprompt = "Please tell me who is your first player?";
+        speechOutput += 'Ghost, Let\'s start your game. Who\'s your first player?'
+        reprompt = "Please tell me the name of your first player?"
       } else if (currentGame.isEmptyScore()) {
-          speechOutput += 'ScoreKeeper, '
+          speechOutput += 'Ghost, '
               + 'you have ' + currentGame.data.players.length + ' player';
           if (currentGame.data.players.length > 1) {
-              speechOutput += 's';
+              speechOutput += 's'
           }
-          speechOutput += ' in the game. You can give a player points, add another player, reset all players or exit. Which would you like?';
+          speechOutput += ' in the game. You can add another player, start the game,'
+            + ' reset all players or exit. Which would you like?'
           reprompt = textHelper.completeHelp;
       } else {
-          speechOutput += 'ScoreKeeper, What can I do for you?';
-          reprompt = textHelper.nextHelp;
+          speechOutput += 'Ghost, What can I do for you?'
+          reprompt = textHelper.nextHelp
       }
-      response.ask(speechOutput, reprompt);
+      response.ask(speechOutput, reprompt)
     })
   }
 }
