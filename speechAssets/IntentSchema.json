@@ -1,0 +1,34 @@
+{
+  "intents": [
+    {
+      "intent": "AddPlayerIntent",
+      "slots": [
+        {
+          "name": "PlayerName",
+          "type": "AMAZON.US_FIRST_NAME"
+        }
+      ]
+    },
+    {
+      "intent": "TellGameLettersIntent"
+    },
+    {
+      "intent": "ResetPlayersIntent"
+    },
+    {
+      "intent": "NewGameIntent"
+    },
+    {
+      "intent": "TellScoresIntent"
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    }
+  ]
+  }
