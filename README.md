@@ -27,8 +27,8 @@ the first version of the game pushed to Amazon for certification by mid-January.
 ## ToDo
 
 1. Add IntentHandlers for the following game logic pieces:
-* addLetter => basic game play action each user's turn
-* challengeCheck => dictionary check of challenged user's provided word
+  * addLetter => basic game play action each user's turn
+  * challengeCheck => dictionary check of challenged user's provided word
 2. Add sample utterances for the above handlers
 3. Create Trie-based dictionary for ending a round when a user spells a word
 4. Create game over and game won logic  
