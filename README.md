@@ -19,10 +19,7 @@ receives a ghost letter.)
 
 The structure (skeleton) for a working Alexa App is in place, but there's still
 a long way to go. Specifically, the Skill class and its sub-class event/intent
-handlers are coded, but much of the game remains to be added. I'm spending a
-couple of hours a day building it out, but of course, life sometimes gets in
-the way of a devoted daily effort. If all goes as planned (haha), I should have
-the first version of the game pushed to Amazon for certification by mid-January.
+handlers are coded, but much of the game remains to be added. To be continued!
 
 ## ToDo
 
