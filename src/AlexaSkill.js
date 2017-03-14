@@ -45,11 +45,11 @@ AlexaSkill.prototype.requestHandlers = {
 // meat and potatoes for handling events
 AlexaSkill.prototype.eventHandlers = {
   onSessionStarted: (sessionStartedRequest, session) => {
-    // why is this empty?
+    // TODO
   },
 
   onLaunch: (launchRequest, session, response) => {
-    throw 'onLaunch should be overriden by subclass'  // why does this throw an error?
+    throw 'onLaunch should be overriden by subclass'  // TODO: Clarify Error Handling
   },
 
   // handles user request to do actually do something with the skill based on
@@ -67,12 +67,10 @@ AlexaSkill.prototype.eventHandlers = {
   },
 
   onSessionEnded: (sessionEndedRequest, session) => {
-    // why is this empty?
+    // TODO
   }
 }
-
-// intent handlers, which support the event handlers above, are provided by
-// instances of the skill. ??
+// instance-based intent handlers
 AlexaSkill.prototype.intentHandlers = {}
 
 AlexaSkill.prototype.execute = (event, context) => {
